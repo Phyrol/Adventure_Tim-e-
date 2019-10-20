@@ -1,0 +1,11 @@
+draw_set_color(c_red);
+draw_set_font(fnt_text_bold);
+draw_text(x, y, "Controls:");
+draw_set_font(fnt_text);
+draw_set_color(c_white);
+draw_text(x + 5, y + 20, "Z - Shoot");
+draw_text(x + 5, y + 40, "Shift - Jump");
+draw_text(x + 5, y + 60, "Up/Down - Climb");
+draw_text(x + 5, y + 80, "Left/Right - Move");
+draw_text(x + 5, y + 100, "ESC - Back to Menu");
+draw_text(x + 5, y + 120, "F - Enter/Exit Fullscreen");

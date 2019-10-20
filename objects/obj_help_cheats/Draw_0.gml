@@ -1,0 +1,10 @@
+draw_set_color(c_red);
+draw_set_font(fnt_text_bold);
+draw_text(x, y, "Cheat Keys:");
+draw_set_font(fnt_text);
+draw_set_color(c_white);
+draw_text(x + 5, y + 20, "I - Invicibility (999999 Health)");
+draw_text(x + 5, y + 40, "O - Set Health Back to 100");
+draw_text(x + 5, y + 60, "N - Next Room");
+draw_text(x + 5, y + 80, "P - Previous Room");
+draw_text(x + 5, y + 100, "R - Restart Game");

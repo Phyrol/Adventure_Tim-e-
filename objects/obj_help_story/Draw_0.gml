@@ -1,0 +1,13 @@
+draw_set_color(c_red);
+draw_set_font(fnt_text_bold);
+draw_text(x, y, "Story:");
+draw_set_font(fnt_text);
+draw_set_color(c_white);
+draw_text(x + 5, y + 20, "Tim's dad was an adventurer and a famous dragon slayer. Tim, however,");
+draw_text(x + 5, y + 40, "liked to stay inside and be by himself to play with Barbie dolls.");
+draw_text(x + 5, y + 60, "Luckily, Tim had his mom around to take care of him. One day,");
+draw_text(x + 5, y + 80, "Tim's dad didn't return home for dinner. Rumor had spread that he was");
+draw_text(x + 5, y + 100, "killed by the evil wizard Mark. Tim was very sad and angry, so he decided");
+draw_text(x + 5, y + 120, "to go out on his own and slay Mark for killing his father. After");
+draw_text(x + 5, y + 140, "saying goodbye to his Barbie dolls, he grabbed the family gun and set");
+draw_text(x + 5, y + 160, "out on his own adventure to avenge his father.");

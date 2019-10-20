@@ -1,0 +1,9 @@
+if(file_exists("Save.sav"))
+{
+	file_delete("Save.sav");
+	game_save("Save.sav");
+}
+else
+{
+	game_save("Save.sav");
+}
