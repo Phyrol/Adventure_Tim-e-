@@ -9,7 +9,6 @@ var vector2_y = 1;
 // Horizontal movement
 velocity_[vector2_x] = clamp(velocity_[vector2_x]+x_input, -max_velocity_[vector2_x], max_velocity_[vector2_x]);
 
-//***This code is not from video***
 //set sprite direction
 if x_input < 0
 {
@@ -23,9 +22,10 @@ if x_input > 0
 	image_speed = gImageSpeedMove;
 	pDirection = 1;
 }
-//**end***//
+
 // Friction
-if x_input == 0 {
+if x_input == 0
+{
 	velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, 1);
 	if(pDirection < 0)//this not in video
 	{
@@ -47,20 +47,27 @@ move_and_contact_tiles(collision_tile_map_id_, 32, velocity_);
 // Jumping
 var on_ground = tile_collide_at_points(collision_tile_map_id_, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
 var jumpKey = keyboard_check_pressed(vk_shift);
-if jumped < 1 { //jumped < 1 is actually (on_ground) in video
+
+//check if player has jumped or not
+if jumped < 1
+{
 	// Jumping
-	if jumpKey {
+	if jumpKey
+	{
 		velocity_[vector2_y] = -jump_speed_;
 		jumped += 1;
 	}
-} else {
+}
+else
+{
 	// Control jump height
-	if jumpKey && velocity_[vector2_y] <= -(jump_speed_/3) {
+	if jumpKey && velocity_[vector2_y] <= -(jump_speed_/3)
+	{
 		velocity_[vector2_y] = -(jump_speed_/3);
 	}
 }
-//***this code not in video***//
+//checks if player has touched the ground
 if(on_ground)
 {
-	jumped = 0;
+	jumped = 0; //resets jump counter
 }
